@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"tsc --watch\" \"nodemon dist/index.js\"",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,15 @@
     "url": "https://github.com/HugoRoca/typescript_pg_postgres/issues"
   },
   "homepage": "https://github.com/HugoRoca/typescript_pg_postgres#readme",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.2.1"
+  },
   "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/pg": "^7.14.3",
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4",
     "typescript": "^3.9.3"
   }
 }
