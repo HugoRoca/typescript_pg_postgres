@@ -1,0 +1,4 @@
+// for create tsconfig
+npx tsc --init 
+// for compile
+npm tsc 
